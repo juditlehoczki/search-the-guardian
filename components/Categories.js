@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TouchableWithoutFeedback, Linking } from "react-native";
+import { View, Text, TouchableWithoutFeedback } from "react-native";
 import s from "../styles.js";
 
 const Categories = (props) => {

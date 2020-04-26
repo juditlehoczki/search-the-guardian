@@ -82,7 +82,6 @@ const styles = StyleSheet.create({
     fontSize: 30,
     textAlign: "right",
     color: colors.pink,
-    fontFamily: "Courier New",
     alignSelf: "center",
   },
   search: {

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, TextInput, TouchableOpacity } from "react-native";
-// import Snackbar from 'react-native-snackbar';
+import { View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 import s from "../styles.js";
 
 class Subscribe extends Component {
@@ -17,12 +16,18 @@ class Subscribe extends Component {
     const { emailInput, emailError } = this.state;
     this.validate();
     if (emailError === null) {
-      // Snackbar.show({
-      //   text: 'Thank you! You have successfully subscribed.',
-      //   duration: Snackbar.LENGTH_LONG,
-      //   backgroundColor: '#0F406E',
-      //   textColor: 'white',
-      // });
+      this.setState({ emailInput: "" });
+      Alert.alert(
+        "You have successfully subscribed.",
+        "Thank you!",
+        [
+          {
+            text: "Close",
+            style: "cancel",
+          },
+        ],
+        { cancelable: false }
+      );
     }
   }
 
