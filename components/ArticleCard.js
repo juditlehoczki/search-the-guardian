@@ -32,10 +32,7 @@ const Card = (props) => {
           <View style={{ flexDirection: "row" }}>
             <Text>{`${moment(webPublicationDate).format("DD-MM-YYYY")}`}</Text>
             <Text> in</Text>
-            <Text style={{ color: "#D1529E", fontWeight: "bold" }}>
-              {" "}
-              {sectionName}
-            </Text>
+            <Text style={s.date}> {sectionName}</Text>
           </View>
           <Text>{`${trailText}...`}</Text>
         </View>

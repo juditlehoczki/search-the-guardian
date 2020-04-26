@@ -6,15 +6,7 @@ const Search = (props) => {
   const { handleChange, searchInput, getArticles } = props;
   return (
     <View style={s.inputContainer}>
-      <Text
-        style={{
-          alignSelf: "center",
-          fontSize: 20,
-          marginLeft: 5,
-        }}
-      >
-        🔍
-      </Text>
+      <Text style={s.icon}>🔍</Text>
       <TextInput
         style={s.inputField}
         value={searchInput}
@@ -29,14 +21,7 @@ const Search = (props) => {
           searchInput.length > 0 && getArticles(1, searchInput);
         }}
       >
-        <Text
-          style={{
-            color: "white",
-            fontWeight: "bold",
-          }}
-        >
-          Go!
-        </Text>
+        <Text style={s.buttonText}>Go!</Text>
       </TouchableOpacity>
     </View>
   );

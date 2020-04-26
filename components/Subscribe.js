@@ -52,19 +52,9 @@ class Subscribe extends Component {
         <Text style={s.sectionTitle}>
           Want more? Subscribe to our weekly newsletter:
         </Text>
-        {emailError && (
-          <Text style={{ alignSelf: "center" }}>{emailError}</Text>
-        )}
+        {emailError && <Text style={s.errorMsg}>{emailError}</Text>}
         <View style={s.inputContainer}>
-          <Text
-            style={{
-              alignSelf: "center",
-              fontSize: 20,
-              marginLeft: 5,
-            }}
-          >
-            ✉️
-          </Text>
+          <Text style={s.icon}>✉️</Text>
           <TextInput
             style={s.inputField}
             value={emailInput}
@@ -80,14 +70,7 @@ class Subscribe extends Component {
               this.handleSubmit();
             }}
           >
-            <Text
-              style={{
-                color: "white",
-                fontWeight: "bold",
-              }}
-            >
-              Go!
-            </Text>
+            <Text style={s.buttonText}>Go!</Text>
           </TouchableOpacity>
         </View>
       </View>

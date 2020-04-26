@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
   },
+  date: { color: "#D1529E", fontWeight: "bold" },
   category: {
     letterSpacing: 3,
     fontSize: 20,
@@ -85,6 +86,11 @@ const styles = StyleSheet.create({
     color: colors.pink,
     alignSelf: "center",
   },
+  icon: {
+    alignSelf: "center",
+    fontSize: 20,
+    marginLeft: 5,
+  },
   search: {
     fontSize: 20,
     textAlign: "center",
@@ -106,6 +112,7 @@ const styles = StyleSheet.create({
     marginLeft: 5,
     padding: 15,
   },
+  errorMsg: { alignSelf: "center" },
   button: {
     flex: 1,
     backgroundColor: colors.pink,
@@ -115,12 +122,31 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  buttonText: {
+    color: "white",
+    fontWeight: "bold",
+  },
   paginator: {
     flexDirection: "row",
     fontSize: 18,
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
+  },
+  pageChangerButton: {
+    fontSize: 20,
+    color: colors.pink,
+    borderStyle: "dotted",
+    borderWidth: 1,
+    borderColor: colors.pink,
+    borderRadius: 5,
+    marginHorizontal: 5,
+    paddingHorizontal: 5,
+    textAlignVertical: "center",
+  },
+  pages: {
+    color: colors.blue,
+    fontWeight: "bold",
   },
   credit: {
     color: "white",
