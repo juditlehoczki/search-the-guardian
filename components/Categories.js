@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TouchableWithoutFeedback } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import s from "../styles.js";
 
 const Categories = (props) => {
@@ -21,7 +21,7 @@ const Categories = (props) => {
       </Text>
       {categories.map((category) => {
         return (
-          <TouchableWithoutFeedback
+          <TouchableOpacity
             onPress={() => {
               getArticlesBySection(1, category.toLowerCase());
             }}
@@ -32,7 +32,7 @@ const Categories = (props) => {
               <Text style={s.arrow1}>&gt;</Text>
               <Text style={s.arrow2}>&gt;</Text>
             </View>
-          </TouchableWithoutFeedback>
+          </TouchableOpacity>
         );
       })}
     </View>

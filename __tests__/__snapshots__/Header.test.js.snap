@@ -10,7 +10,7 @@ exports[`Header Component Snapshot - it renders correctly 1`] = `
         "fontWeight": "bold",
         "letterSpacing": 10,
         "marginBottom": -27,
-        "marginTop": 80,
+        "marginTop": 60,
         "textAlign": "center",
       }
     }

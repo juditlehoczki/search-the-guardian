@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TouchableWithoutFeedback } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 
 import s from "../styles.js";
 
@@ -7,18 +7,16 @@ const Paginator = (props) => {
   const { currentPage, pagesCount, changePage } = props;
   return (
     <View style={s.paginator}>
-      <TouchableWithoutFeedback
-        onPress={() => currentPage !== 1 && changePage(-1)}
-      >
+      <TouchableOpacity onPress={() => currentPage !== 1 && changePage(-1)}>
         <Text style={s.pageChangerButton}>&lt;</Text>
-      </TouchableWithoutFeedback>
+      </TouchableOpacity>
       <Text style={s.pages}>{`${currentPage}/${pagesCount}`}</Text>
-      <TouchableWithoutFeedback
+      <TouchableOpacity
         disabled={currentPage === pagesCount}
         onPress={() => currentPage !== pagesCount && changePage(1)}
       >
         <Text style={s.pageChangerButton}>&gt;</Text>
-      </TouchableWithoutFeedback>
+      </TouchableOpacity>
     </View>
   );
 };

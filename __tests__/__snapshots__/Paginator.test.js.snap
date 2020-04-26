@@ -12,9 +12,10 @@ exports[`Paginator Component Snapshot - it renders correctly 1`] = `
     }
   }
 >
-  <Text
+  <View
     accessible={true}
     focusable={true}
+    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -22,15 +23,44 @@ exports[`Paginator Component Snapshot - it renders correctly 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
   >
-    &lt; 
-  </Text>
-  <Text>
+    <Text
+      style={
+        Object {
+          "borderColor": "#D1529E",
+          "borderRadius": 5,
+          "borderStyle": "dotted",
+          "borderWidth": 1,
+          "color": "#D1529E",
+          "fontSize": 20,
+          "marginHorizontal": 5,
+          "paddingHorizontal": 5,
+          "textAlignVertical": "center",
+        }
+      }
+    >
+      &lt;
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#0F406E",
+        "fontWeight": "bold",
+      }
+    }
+  >
     1/2
   </Text>
-  <Text
+  <View
     accessible={true}
     focusable={true}
+    isTVSelectable={true}
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -38,8 +68,29 @@ exports[`Paginator Component Snapshot - it renders correctly 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
   >
-     &gt;
-  </Text>
+    <Text
+      style={
+        Object {
+          "borderColor": "#D1529E",
+          "borderRadius": 5,
+          "borderStyle": "dotted",
+          "borderWidth": 1,
+          "color": "#D1529E",
+          "fontSize": 20,
+          "marginHorizontal": 5,
+          "paddingHorizontal": 5,
+          "textAlignVertical": "center",
+        }
+      }
+    >
+      &gt;
+    </Text>
+  </View>
 </View>
 `;

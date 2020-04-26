@@ -1,5 +1,12 @@
 import React, { Component } from "react";
-import { ScrollView, View, Text, Linking, FlatList } from "react-native";
+import {
+  ScrollView,
+  View,
+  Text,
+  Linking,
+  FlatList,
+  TouchableOpacity,
+} from "react-native";
 
 import { fetchArticles } from "./api.js";
 import Card from "./components/ArticleCard.js";
@@ -10,8 +17,6 @@ import Search from "./components/Search.js";
 import Subscribe from "./components/Subscribe.js";
 
 import s from "./styles.js";
-
-// to do: add sorting options to the results
 
 import { YellowBox } from "react-native";
 YellowBox.ignoreWarnings([
@@ -173,14 +178,16 @@ export default class App extends Component {
           )}
         </View>
         <Subscribe />
-        <Text
-          style={s.credit}
-          onPress={() => {
-            Linking.openURL("http://juditlehoczki.me");
-          }}
-        >
-          Developed With 💛 By Judit Lehoczki
-        </Text>
+        <TouchableOpacity>
+          <Text
+            style={s.credit}
+            onPress={() => {
+              Linking.openURL("http://juditlehoczki.me");
+            }}
+          >
+            Developed With 💛 By Judit Lehoczki
+          </Text>
+        </TouchableOpacity>
       </ScrollView>
     );
   }
