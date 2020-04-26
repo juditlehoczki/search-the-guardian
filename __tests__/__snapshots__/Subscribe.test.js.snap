@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Subscribe Component Snapshot - it renders correctly 1`] = `
+<View>
+  <Text
+    style={
+      Object {
+        "backgroundColor": "#54C1B7",
+        "color": "white",
+        "fontWeight": "bold",
+        "marginVertical": 15,
+        "paddingLeft": 15,
+        "paddingVertical": 5,
+      }
+    }
+  >
+    Want more? Subscribe to our weekly newsletter:
+  </Text>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "alignSelf": "center",
+          "fontSize": 20,
+          "marginLeft": 5,
+        }
+      }
+    >
+      ✉️
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      keyboardType="email-address"
+      onChangeText={[Function]}
+      placeholder="Email address..."
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "borderColor": "#D1529E",
+          "borderRadius": 5,
+          "borderStyle": "dotted",
+          "borderWidth": 1,
+          "color": "#0F406E",
+          "flex": 8,
+          "marginLeft": 5,
+          "marginVertical": 5,
+          "padding": 15,
+        }
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#D1529E",
+          "borderRadius": 15,
+          "flex": 1,
+          "justifyContent": "center",
+          "margin": 5,
+          "opacity": 1,
+          "padding": 5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Go!
+      </Text>
+    </View>
+  </View>
+</View>
+`;

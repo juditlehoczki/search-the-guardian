@@ -53,13 +53,14 @@ exports[`ArticleCard Component Snapshot - it renders correctly 1`] = `
           "height": "100%",
           "marginBottom": "auto",
           "marginTop": "auto",
+          "minHeight": 200,
         }
       }
     />
     <View
       style={
         Object {
-          "flex": 4,
+          "flex": 3,
           "marginHorizontal": 10,
         }
       }
@@ -109,7 +110,6 @@ exports[`ArticleCard Component Snapshot - it renders correctly 1`] = `
         Object {
           "alignSelf": "center",
           "color": "#D1529E",
-          "fontFamily": "Courier New",
           "fontSize": 30,
           "textAlign": "right",
         }

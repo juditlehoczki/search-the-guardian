@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
   thumbnail: {
     flex: 2,
     height: "100%",
+    minHeight: 200,
     marginTop: "auto",
     marginBottom: "auto",
     borderRadius: 5,
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
     borderWidth: 3,
   },
   intro: {
-    flex: 4,
+    flex: 3,
     marginHorizontal: 10,
   },
   articleTitle: { color: colors.blue, fontWeight: "bold", fontSize: 16 },
