@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleCard Component Snapshot - it renders correctly 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 10,
+        "elevation": 5,
+        "flexDirection": "row",
+        "marginHorizontal": 5,
+        "marginVertical": 3,
+        "padding": 10,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.25,
+        "shadowRadius": 3.84,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": "",
+        }
+      }
+      style={
+        Object {
+          "borderColor": "#54C1B7",
+          "borderRadius": 5,
+          "borderWidth": 3,
+          "flex": 2,
+          "height": "100%",
+          "marginBottom": "auto",
+          "marginTop": "auto",
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 4,
+          "marginHorizontal": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#0F406E",
+            "fontSize": 16,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        
+      </Text>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text>
+          Invalid date
+        </Text>
+        <Text>
+           in
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#D1529E",
+              "fontWeight": "bold",
+            }
+          }
+        >
+           
+          
+        </Text>
+      </View>
+      <Text>
+        ...
+      </Text>
+    </View>
+    <Text
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#D1529E",
+          "fontFamily": "Courier New",
+          "fontSize": 30,
+          "textAlign": "right",
+        }
+      }
+    >
+      &gt;
+    </Text>
+  </View>
+</View>
+`;

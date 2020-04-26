@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component Snapshot - it renders correctly 1`] = `
+<View>
+  <Text
+    style={
+      Object {
+        "color": "#54C1B7",
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "letterSpacing": 10,
+        "marginBottom": -27,
+        "marginTop": 80,
+        "textAlign": "center",
+      }
+    }
+  >
+    search
+  </Text>
+  <View
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <Image
+      source={1}
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 100,
+          "paddingVertical": 10,
+          "resizeMode": "contain",
+          "width": "95%",
+        }
+      }
+    />
+  </View>
+</View>
+`;
