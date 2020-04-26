@@ -10,14 +10,14 @@ const Paginator = (props) => {
       <TouchableWithoutFeedback
         onPress={() => currentPage !== 1 && changePage(-1)}
       >
-        <Text>&lt; </Text>
+        <Text style={s.pageChangerButton}>&lt;</Text>
       </TouchableWithoutFeedback>
-      <Text>{`${currentPage}/${pagesCount}`}</Text>
+      <Text style={s.pages}>{`${currentPage}/${pagesCount}`}</Text>
       <TouchableWithoutFeedback
         disabled={currentPage === pagesCount}
         onPress={() => currentPage !== pagesCount && changePage(1)}
       >
-        <Text> &gt;</Text>
+        <Text style={s.pageChangerButton}>&gt;</Text>
       </TouchableWithoutFeedback>
     </View>
   );
