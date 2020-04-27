@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import {
   ScrollView,
   View,
@@ -6,7 +7,11 @@ import {
   Linking,
   FlatList,
   TouchableOpacity,
+  YellowBox,
 } from "react-native";
+YellowBox.ignoreWarnings([
+  "VirtualizedLists should never be nested", // TODO: Remove when fixed
+]);
 
 import { fetchArticles } from "./api.js";
 import Card from "./components/ArticleCard.js";
@@ -15,13 +20,9 @@ import Paginator from "./components/Paginator.js";
 import Header from "./components/Header.js";
 import Search from "./components/Search.js";
 import Subscribe from "./components/Subscribe.js";
+import Credit from "./components/Credit.js";
 
 import s from "./styles.js";
-
-import { YellowBox } from "react-native";
-YellowBox.ignoreWarnings([
-  "VirtualizedLists should never be nested", // TODO: Remove when fixed
-]);
 
 export default class App extends Component {
   state = {
@@ -165,7 +166,7 @@ export default class App extends Component {
                 pagesCount={pagesCount}
                 changePage={this.changePage.bind(this)}
               />
-              <View style={{ width: "100%" }}>
+              <View>
                 <FlatList
                   data={articles}
                   renderItem={({ item }) => {
@@ -182,16 +183,7 @@ export default class App extends Component {
           )}
         </View>
         <Subscribe />
-        <TouchableOpacity>
-          <Text
-            style={s.credit}
-            onPress={() => {
-              Linking.openURL("http://juditlehoczki.me");
-            }}
-          >
-            Developed With 💛 By Judit Lehoczki
-          </Text>
-        </TouchableOpacity>
+        <Credit />
       </ScrollView>
     );
   }
