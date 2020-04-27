@@ -8,8 +8,8 @@
 
 1. Clone repo:<br>`git clone https://github.com/juditlehoczki/search-the-guardian.git`
 2. Enter folder:<br>`cd search-the-guardian`
-3. Install dependencies:<br>`npm install`
-4. Install Expo:<br>`npm install --global expo-cli`
+3. Install Expo:<br>`npm install --global expo-cli`
+4. Install dependencies:<br>`npm install`
 5. Get your [The Guardian API key](https://open-platform.theguardian.com/access/) and add it to a config.js file in the root of the directory. Paste the below code in:<br>
    `const apiKey = ' your API key ';`<br>
    `export default apiKey;`
