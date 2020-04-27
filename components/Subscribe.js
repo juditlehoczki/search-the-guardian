@@ -9,13 +9,14 @@ class Subscribe extends Component {
     this.setState({
       emailInput: value,
     });
-    this.validate();
+    this.validate(value);
   }
 
   handleSubmit() {
     const { emailInput, emailError } = this.state;
-    this.validate();
-    if (emailError === null) {
+    if (emailInput === "") {
+      this.setState({ emailError: "Enter your email address first." });
+    } else if (emailError === null) {
       this.setState({ emailInput: "" });
       Alert.alert(
         "You have successfully subscribed.",
@@ -31,18 +32,11 @@ class Subscribe extends Component {
     }
   }
 
-  validate() {
-    const { emailInput } = this.state;
-    if (emailInput === "") {
-      this.setState({
-        emailError: "Enter your email address first.",
-      });
-    } else {
-      const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      regex.test(emailInput)
-        ? this.setState({ emailError: null })
-        : this.setState({ emailError: "Entered email address is invalid." });
-    }
+  validate(value) {
+    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    regex.test(value)
+      ? this.setState({ emailError: null })
+      : this.setState({ emailError: "Please enter a valid email address." });
   }
 
   render() {
@@ -56,7 +50,7 @@ class Subscribe extends Component {
         <View style={s.inputContainer}>
           <Text style={s.icon}>✉️</Text>
           <TextInput
-            style={s.inputField}
+            style={[emailError ? s.inputFieldInvalid : s.inputField]}
             value={emailInput}
             placeholder="Email address..."
             keyboardType="email-address"
