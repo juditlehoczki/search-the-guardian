@@ -10,8 +10,8 @@
 2. Enter folder:<br>`cd search-the-guardian`
 3. Install Expo:<br>`npm install --global expo-cli`
 4. Install dependencies:<br>`npm install`
-5. Get your [The Guardian API key](https://open-platform.theguardian.com/access/) and add it to a config.js file in the root of the directory. Paste the below code in:<br>
-   `const apiKey = ' your API key ';`<br>
+5. Get your [The Guardian API key](https://open-platform.theguardian.com/access/). Create a config.js file in the root of the directory and paste the below code in:<br>
+   `const apiKey = 'your API key';`<br>
    `export default apiKey;`
 
 6. Start Expo:<br>`expo start`<br>Make your choice of using an iOS or Android emulator or to scan the QR code with your Expo app from your physical mobile device.
