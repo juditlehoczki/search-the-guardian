@@ -7,6 +7,7 @@ const colors = {
   green: "#54C1B7",
   blue: "#0F406E",
   lightGrey: "#F2F2F2",
+  white: "white",
 };
 
 const styles = StyleSheet.create({
@@ -67,11 +68,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   buttonText: {
-    color: "white",
+    color: colors.white,
     fontWeight: "bold",
   },
   sectionTitle: {
-    color: "white",
+    color: colors.white,
     fontWeight: "bold",
     backgroundColor: colors.green,
     paddingVertical: 5,
@@ -84,7 +85,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
     marginVertical: 3,
     borderRadius: 10,
-    backgroundColor: "white",
+    backgroundColor: colors.white,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -109,7 +110,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   articleTitle: { color: colors.blue, fontWeight: "bold", fontSize: 16 },
-  date: { color: "#D1529E", fontWeight: "bold" },
+  date: { color: colors.pink, fontWeight: "bold" },
   more: {
     fontSize: 30,
     textAlign: "right",
@@ -160,7 +161,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   credit: {
-    color: "white",
+    color: colors.white,
     fontWeight: "bold",
     backgroundColor: colors.pink,
     paddingVertical: 5,
