@@ -29,7 +29,7 @@ const Card = (props) => {
         />
         <View style={s.intro}>
           <Text style={s.articleTitle}>{`${webTitle}`}</Text>
-          <View style={{ flexDirection: "row" }}>
+          <View style={s.infoContainer}>
             <Text>{`${moment(webPublicationDate).format("DD-MM-YYYY")}`}</Text>
             <Text> in</Text>
             <Text style={s.date}> {sectionName}</Text>

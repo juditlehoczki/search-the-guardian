@@ -110,6 +110,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   articleTitle: { color: colors.blue, fontWeight: "bold", fontSize: 16 },
+  infoContainer: { flexDirection: "row" },
   date: { color: colors.pink, fontWeight: "bold" },
   more: {
     fontSize: 30,
