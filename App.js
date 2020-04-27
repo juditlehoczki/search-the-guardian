@@ -123,6 +123,7 @@ export default class App extends Component {
       fiveNewestArticles,
       currentPage,
       pagesCount,
+      resultsCount,
     } = this.state;
 
     return (
@@ -156,6 +157,9 @@ export default class App extends Component {
             </View>
           ) : (
             <View>
+              <Text style={s.sectionTitle}>
+                A total of {resultsCount} articles found.
+              </Text>
               <Paginator
                 currentPage={currentPage}
                 pagesCount={pagesCount}

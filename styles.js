@@ -135,15 +135,14 @@ const styles = StyleSheet.create({
     color: colors.green,
     alignSelf: "center",
   },
-
-  errorMsg: { alignSelf: "center" },
-
+  errorMsg: { alignSelf: "center", color: colors.green },
   paginator: {
     flexDirection: "row",
     fontSize: 18,
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
+    marginVertical: 10,
   },
   pageChangerButton: {
     fontSize: 20,
