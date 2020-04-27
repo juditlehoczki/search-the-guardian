@@ -1,13 +1,8 @@
 import React from "react";
 import "react-native";
 import renderer from "react-test-renderer";
-import { Alert } from "react-native";
 
 import Subscribe from "../components/Subscribe.js";
-
-let fakeHandleChange;
-let fakeHandleSubmit;
-let fakeValidate;
 
 describe("Subscribe Component", () => {
   beforeEach(() => {
