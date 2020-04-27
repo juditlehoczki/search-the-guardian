@@ -834,17 +834,19 @@ exports[`App Component Snapshot - it renders correctly 1`] = `
           placeholder="Email address..."
           rejectResponderTermination={true}
           style={
-            Object {
-              "borderColor": "#D1529E",
-              "borderRadius": 5,
-              "borderStyle": "dotted",
-              "borderWidth": 1,
-              "color": "#0F406E",
-              "flex": 8,
-              "marginLeft": 5,
-              "marginVertical": 5,
-              "padding": 15,
-            }
+            Array [
+              Object {
+                "borderColor": "#D1529E",
+                "borderRadius": 5,
+                "borderStyle": "dotted",
+                "borderWidth": 1,
+                "color": "#0F406E",
+                "flex": 8,
+                "marginLeft": 5,
+                "marginVertical": 5,
+                "padding": 15,
+              },
+            ]
           }
           underlineColorAndroid="transparent"
           value=""
@@ -886,22 +888,40 @@ exports[`App Component Snapshot - it renders correctly 1`] = `
         </View>
       </View>
     </View>
-    <Text
-      onPress={[Function]}
+    <View
+      accessible={true}
+      focusable={false}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#D1529E",
-          "color": "white",
-          "fontWeight": "bold",
-          "marginVertical": 15,
-          "paddingRight": 15,
-          "paddingVertical": 5,
-          "textAlign": "right",
+          "opacity": 1,
         }
       }
     >
-      Developed With 💛 By Judit Lehoczki
-    </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#D1529E",
+            "color": "white",
+            "fontWeight": "bold",
+            "marginVertical": 15,
+            "paddingRight": 15,
+            "paddingVertical": 5,
+            "textAlign": "right",
+          }
+        }
+      >
+        Developed With 💛 By Judit Lehoczki
+      </Text>
+    </View>
   </View>
 </RCTScrollView>
 `;

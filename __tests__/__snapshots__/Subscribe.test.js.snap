@@ -41,17 +41,19 @@ exports[`Subscribe Component Snapshot - it renders correctly 1`] = `
       placeholder="Email address..."
       rejectResponderTermination={true}
       style={
-        Object {
-          "borderColor": "#D1529E",
-          "borderRadius": 5,
-          "borderStyle": "dotted",
-          "borderWidth": 1,
-          "color": "#0F406E",
-          "flex": 8,
-          "marginLeft": 5,
-          "marginVertical": 5,
-          "padding": 15,
-        }
+        Array [
+          Object {
+            "borderColor": "#D1529E",
+            "borderRadius": 5,
+            "borderStyle": "dotted",
+            "borderWidth": 1,
+            "color": "#0F406E",
+            "flex": 8,
+            "marginLeft": 5,
+            "marginVertical": 5,
+            "padding": 15,
+          },
+        ]
       }
       underlineColorAndroid="transparent"
       value=""
