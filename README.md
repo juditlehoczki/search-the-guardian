@@ -1,12 +1,20 @@
 # The Guardian Search
 
+## Demo
+
+<img border="1" style="border-radius:10px;" alt="Search The Guardian Demo" src="./img/search-the-guardian.gif" width="350">
+
 ## Local Install
 
 1. Clone repo:<br>`git clone https://github.com/juditlehoczki/search-the-guardian.git`
 2. Enter folder:<br>`cd search-the-guardian`
 3. Install dependencies:<br>`npm install`
 4. Install Expo:<br>`npm install --global expo-cli`
-5. Start Expo:<br>`expo start`<br>Make your choice of using an iOS or Android emulator or to scan the QR code with your Expo app from your physical mobile device.
+5. Get your [The Guardian API key](https://open-platform.theguardian.com/access/) and add it to a config.js file in the root of the directory. Paste the below code in:<br>
+   `const apiKey = ' your API key ';`<br>
+   `export default apiKey;`
+
+6. Start Expo:<br>`expo start`<br>Make your choice of using an iOS or Android emulator or to scan the QR code with your Expo app from your physical mobile device.
 
 ## Tech Stack
 
@@ -49,7 +57,3 @@ Tests can be run with: `npm test`
 ## Code Formatting
 
 Prettier is used for code formatting, VSCode is setup to format all files on save.
-
-## Demo
-
-<img border="1" style="border-radius:10px;" alt="News-dark" src="./img/search-the-guardian.gif" width="350">
